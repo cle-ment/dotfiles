@@ -32,8 +32,11 @@ brew update
 brew tap homebrew/bundle
 brew bundle --file $DOTFILES/Brewfile
 
-# Symlink the Mackup config file to the home directory
-ln -s $DOTFILES/.mackup.cfg $HOME/.mackup.cfg
+# Symlink other dotfiles
+rm -rf $HOME/.mackup.cfg && ln -s $DOTFILES/.mackup.cfg $HOME/.mackup.cfg
+rm -rf $HOME/.nanorc && ln -s $DOTFILES/.nanorc $HOME/.nanorc
+rm -rf $HOME/.gitconfig && ln -s $DOTFILES/.gitconfig $HOME/.gitconfig
+rm -rf $HOME/.gitignore_global && ln -s $DOTFILES/.gitignore_global $HOME/.gitignore_global
 
 # Set macOS preferences - we will run this last because this will reload the shell
 source $DOTFILES/.macos
