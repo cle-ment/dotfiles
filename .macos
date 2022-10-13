@@ -49,6 +49,9 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bo
 # Set the timezone; see `sudo systemsetup -listtimezones` for other values
 sudo systemsetup -settimezone "Europe/Helsinki" > /dev/null
 
+# Enable three finger drag 
+ defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerSwipeGesture -int 1
+
 ###############################################################################
 # Energy saving                                                               #
 ###############################################################################
