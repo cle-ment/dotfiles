@@ -24,7 +24,7 @@ brew 'sdkman-cli'
 brew 'miniconda' 
 brew 'kreuzwerker/taps/awsu' 
 brew 'z' 
-# brew 'svn' # Needed to install fonts
+brew 'svn' # Needed to install fonts
 
 # Development
 brew 'imagemagick'
@@ -56,13 +56,9 @@ cask 'qlmarkdown'
 cask 'quicklook-json'
 
 # Fonts
-cask 'font-lato'
+cask 'font-meslo-lg-nerd-font'
 cask 'font-open-sans'
 cask 'font-roboto'
-cask 'font-source-code-pro-for-powerline'
-cask 'font-source-code-pro'
-cask 'font-source-sans-pro'
-cask 'font-source-serif-pro'
 
 # Mac App Store
 mas 'Keynote', id: 409183694
