@@ -31,7 +31,7 @@ After backing up your old Mac you may now follow these install instructions to s
 5. Run the installation with:
 
    ```zsh
-   ~/.dotfiles/fresh.sh
+   ~/.dotfiles/setup.sh
    ```
 
 6. After mackup is synced with your cloud storage, restore preferences by running `mackup restore`
