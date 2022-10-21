@@ -21,7 +21,6 @@ brew 'jq' # Used for spatie/visit
 brew 'mackup'
 brew 'mas' # Mac App Store manager
 brew 'sdkman-cli' 
-brew 'miniconda' 
 brew 'kreuzwerker/taps/awsu' 
 brew 'z' 
 brew 'svn' # Needed to install fonts
@@ -36,6 +35,7 @@ cask 'firefox'
 cask 'slack'
 cask 'telegram-desktop'
 cask 'visual-studio-code'
+cask 'miniconda' 
 cask 'microsoft-teams'
 cask 'microsoft-excel'
 cask 'microsoft-powerpoint'

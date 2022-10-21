@@ -42,3 +42,7 @@ Your Mac is now ready to use!
 ### Cleaning your old Mac (optionally)
 
 After you've set up your new Mac you may want to wipe and clean install your old Mac. Follow [this article](https://support.apple.com/guide/mac-help/erase-and-reinstall-macos-mh27903/mac) to do that. Remember to [backup your data](#backup-your-data) first!
+
+### TODO
+
+- Seperate private and work setup: have common shared setup files and separate installs for each setup
