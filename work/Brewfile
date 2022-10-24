@@ -1,0 +1,14 @@
+tap 'sdkman/tap'
+tap 'kreuzwerker/taps'
+
+brew 'awscli'
+brew 'kreuzwerker/taps/awsu' 
+# brew 'sdkman-cli' 
+
+cask 'slack'
+cask 'microsoft-teams'
+cask 'microsoft-excel'
+cask 'microsoft-powerpoint'
+cask 'microsoft-word'
+cask 'miro'
+cask 'intellij-idea-ce'

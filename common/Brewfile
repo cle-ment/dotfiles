@@ -4,11 +4,8 @@ tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
 tap 'nicoverbruggen/homebrew-cask'
-tap 'sdkman/tap'
-tap 'kreuzwerker/taps'
 
 # Binaries
-brew 'awscli'
 brew 'bash' # Latest Bash version
 brew 'bat' # Used for spatie/visit
 brew 'coreutils' # Those that come with macOS are outdated
@@ -16,12 +13,9 @@ brew 'ffmpeg'
 brew 'gh'
 brew 'git'
 brew 'grep'
-brew 'httpie'
-brew 'jq' # Used for spatie/visit
+brew 'jq'
 brew 'mackup'
 brew 'mas' # Mac App Store manager
-brew 'sdkman-cli' 
-brew 'kreuzwerker/taps/awsu' 
 brew 'z' 
 brew 'svn' # Needed to install fonts
 
@@ -32,24 +26,17 @@ brew 'imagemagick'
 cask '1password'
 cask 'docker'
 cask 'firefox'
-cask 'slack'
 cask 'telegram-desktop'
 cask 'visual-studio-code'
 cask 'miniconda' 
-cask 'microsoft-teams'
-cask 'microsoft-excel'
-cask 'microsoft-powerpoint'
-cask 'microsoft-word'
-cask 'miro'
 cask 'dropbox'
-cask 'handbrake'
 cask 'iterm2'
 cask 'postman'
 cask 'rectangle'
 cask 'signal'
 cask 'spotify'
 cask 'TeamViewer'
-# cask 'intellij-idea-ce'
+cask 'bartender'
 
 # Quicklook
 cask 'qlmarkdown'

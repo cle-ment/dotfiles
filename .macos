@@ -28,12 +28,15 @@ defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 # (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
-# Disable press-and-hold for keys in favor of key repeat
+# Press-and-hold for special characters when holding keys 
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # Set a blazingly fast keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 2
-defaults write NSGlobalDomain InitialKeyRepeat -int 10
+defaults write NSGlobalDomain KeyRepeat -float 1.5
+defaults write NSGlobalDomain InitialKeyRepeat -float 13.0
+
+# Spell check language US
+defaults write NSGlobalDomain NSPreferredSpellServerLanguage en_US 
 
 # Set language and text formats
 # Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with
@@ -47,10 +50,10 @@ defaults write NSGlobalDomain AppleMetricUnits -bool true
 sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bool true
 
 # Set the timezone; see `sudo systemsetup -listtimezones` for other values
-sudo systemsetup -settimezone "Europe/Helsinki" > /dev/null
+sudo systemsetup -settimezone Europe/Helsinki > /dev/null 2>&1
 
 # Enable three finger drag 
- defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerSwipeGesture -int 1
+defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerSwipeGesture -int 1
 
 ###############################################################################
 # Energy saving                                                               #
@@ -58,9 +61,6 @@ sudo systemsetup -settimezone "Europe/Helsinki" > /dev/null
 
 # Enable lid wakeup
 sudo pmset -a lidwake 1
-
-# Restart automatically if the computer freezes
-sudo systemsetup -setrestartfreeze on
 
 ###############################################################################
 # Screen                                                                      #
@@ -94,7 +94,7 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 
 # Show the ~/Library folder
-chflags nohidden ~/Library && xattr -d com.apple.FinderInfo ~/Library
+chflags nohidden ~/Library
 
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #

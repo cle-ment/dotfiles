@@ -1,6 +1,11 @@
 #!/bin/sh
 
-echo "-> Setting up your Mac..."
+###############################################################################
+# Installs everything that is common between work and private Mac setup.      #
+# (!) Don't run this directly, since setup-work.sh and setup-private.sh will  #
+# run this file for you already                                               #
+###############################################################################
+
 
 # Check for Oh My Zsh and install if we don't have it
 if ! [ -d ~/.oh-my-zsh ]; then
@@ -9,9 +14,8 @@ if ! [ -d ~/.oh-my-zsh ]; then
 fi
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
-echo "-> Linking .dotfiles/zshrc -> ~/.zshrc"
-rm -rf $HOME/.zshrc
-ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
+echo "-> Linking .dotfiles/.zshrc -> ~/.zshrc"
+rm -rf $HOME/.zshrc && ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
 # Install Powerlevel10k theme for zsh
 if ! [ -d ~/.oh-my-zsh/custom/themes/powerlevel10k ]; then
@@ -41,19 +45,17 @@ brew upgrade
 # Install all our dependencies with bundle (See Brewfile)
 echo "-> Installing homebrew dependencies"
 brew tap homebrew/bundle
-brew bundle --file $DOTFILES/Brewfile
+brew bundle --file $DOTFILES/common/Brewfile
 
 # Symlink other dotfiles
 echo "-> Sym-linking other dotfiles: .mackup.cfg, .nanorc, .gitconfig, .gitignore_global"
-rm -rf $HOME/.mackup.cfg && ln -s $DOTFILES/.mackup.cfg $HOME/.mackup.cfg
-rm -rf $HOME/.nanorc && ln -s $DOTFILES/.nanorc $HOME/.nanorc
 rm -rf $HOME/.gitconfig && ln -s $DOTFILES/.gitconfig $HOME/.gitconfig
 rm -rf $HOME/.gitignore_global && ln -s $DOTFILES/.gitignore_global $HOME/.gitignore_global
+rm -rf $HOME/.mackup.cfg && ln -s $DOTFILES/.mackup.cfg $HOME/.mackup.cfg
+rm -rf $HOME/.nanorc && ln -s $DOTFILES/.nanorc $HOME/.nanorc
 
-# Restore Mackup settings
-echo "-> Running mackup restore"
-mackup restore
+## The command below is not run by the common script but instead by the 
+## work/private setup scripts because this will reload the shell
+# echo "-> Setting up MacOS settings"
+# source $DOTFILES/common/.macos
 
-# Set macOS preferences - we will run this last because this will reload the shell
-echo "-> Setting up MacOS settings"
-source $DOTFILES/.macos
