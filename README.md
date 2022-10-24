@@ -23,7 +23,7 @@ After backing up your old Mac you may now follow these install instructions to s
 4. Clone this repo to `~/.dotfiles` with:
 
    ```zsh
-   git clone git@github.com:cle-ment/.dotfiles.git
+   git clone git@github.com:cle-ment/.dotfiles.git ~
    ```
 
 5. Run the installation with:
