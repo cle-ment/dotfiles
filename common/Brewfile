@@ -18,6 +18,7 @@ brew 'mackup'
 brew 'mas' # Mac App Store manager
 brew 'z' 
 brew 'svn' # Needed to install fonts
+brew 'bfg' # https://rtyley.github.io/bfg-repo-cleaner/
 
 # Development
 brew 'imagemagick'
