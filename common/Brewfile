@@ -19,6 +19,9 @@ brew 'mas' # Mac App Store manager
 brew 'z' 
 brew 'svn' # Needed to install fonts
 brew 'bfg' # https://rtyley.github.io/bfg-repo-cleaner/
+brew 'yarn'
+brew 'docker-compose'
+brew 'saulpw/vd/visidata'
 
 # Development
 brew 'imagemagick'

@@ -3,10 +3,6 @@ tap 'kreuzwerker/taps'
 
 brew 'awscli'
 brew 'kreuzwerker/taps/awsu' 
-brew 'yarn'
-brew 'docker-compose'
-brew 'saulpw/vd/visidata'
-# brew 'sdkman-cli' 
 
 cask 'slack'
 cask 'microsoft-teams'
