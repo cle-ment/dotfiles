@@ -27,6 +27,7 @@ brew 'saulpw/vd/visidata'
 brew 'imagemagick'
 
 # Apps
+cask 'hazel'
 cask '1password'
 cask 'docker'
 cask 'firefox'
@@ -41,6 +42,7 @@ cask 'signal'
 cask 'spotify'
 cask 'TeamViewer'
 cask 'bartender'
+cask 'doxie'
 
 # Quicklook
 cask 'qlmarkdown'
@@ -56,3 +58,4 @@ mas 'Keynote', id: 409183694
 mas 'Numbers', id: 409203825
 mas 'Things', id: 904280696
 mas 'OneDrive', id: 823766827
+mas 'Yubico Authenticator', id: id1497506650

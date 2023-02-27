@@ -11,3 +11,6 @@ cask 'microsoft-powerpoint'
 cask 'microsoft-word'
 cask 'miro'
 cask 'intellij-idea-ce'
+
+cask 'ableton-live-suite'
+
