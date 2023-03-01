@@ -22,6 +22,7 @@ brew 'bfg' # https://rtyley.github.io/bfg-repo-cleaner/
 brew 'yarn'
 brew 'docker-compose'
 brew 'saulpw/vd/visidata'
+brew 'ykman'
 
 # Development
 brew 'imagemagick'
