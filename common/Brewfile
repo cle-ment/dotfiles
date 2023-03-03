@@ -24,6 +24,7 @@ brew 'docker-compose'
 brew 'saulpw/vd/visidata'
 brew 'ykman'
 brew 'nano'
+brew 'gum'
 
 # Development
 brew 'imagemagick'
