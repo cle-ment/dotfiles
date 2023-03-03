@@ -1,46 +1,47 @@
 # ~/.nanorc
-include /usr/local/share/nano/*.nanorc
-# include /usr/local/share/nano/asm.nanorc
-# include /usr/local/share/nano/autoconf.nanorc
-include /usr/local/share/nano/awk.nanorc
-include /usr/local/share/nano/c.nanorc
-include /usr/local/share/nano/changelog.nanorc
-include /usr/local/share/nano/cmake.nanorc
-include /usr/local/share/nano/css.nanorc
-# include /usr/local/share/nano/debian.nanorc
-include /usr/local/share/nano/default.nanorc
-# include /usr/local/share/nano/elisp.nanorc
-# include /usr/local/share/nano/fortran.nanorc
-# include /usr/local/share/nano/gentoo.nanorc
-include /usr/local/share/nano/go.nanorc
-# include /usr/local/share/nano/groff.nanorc
-# include /usr/local/share/nano/guile.nanorc
-include /usr/local/share/nano/html.nanorc
-include /usr/local/share/nano/java.nanorc
-include /usr/local/share/nano/javascript.nanorc
-include /usr/local/share/nano/json.nanorc
-include /usr/local/share/nano/lua.nanorc
-include /usr/local/share/nano/makefile.nanorc
-include /usr/local/share/nano/man.nanorc
-include /usr/local/share/nano/mgp.nanorc
-# include /usr/local/share/nano/mutt.nanorc
-include /usr/local/share/nano/nanohelp.nanorc
-include /usr/local/share/nano/nanorc.nanorc
-include /usr/local/share/nano/nftables.nanorc
-# include /usr/local/share/nano/objc.nanorc
-include /usr/local/share/nano/ocaml.nanorc
-include /usr/local/share/nano/patch.nanorc
-include /usr/local/share/nano/perl.nanorc
-include /usr/local/share/nano/php.nanorc
-# include /usr/local/share/nano/po.nanorc
-include /usr/local/share/nano/postgresql.nanorc
-include /usr/local/share/nano/pov.nanorc
-include /usr/local/share/nano/python.nanorc
-include /usr/local/share/nano/ruby.nanorc
-include /usr/local/share/nano/rust.nanorc
-include /usr/local/share/nano/sh.nanorc
-include /usr/local/share/nano/spec.nanorc
-include /usr/local/share/nano/tcl.nanorc
-include /usr/local/share/nano/tex.nanorc
-include /usr/local/share/nano/texinfo.nanorc
-include /usr/local/share/nano/xml.nanorc
+include "/opt/homebrew/Cellar/nano/*/share/nano/*.nanorc"
+
+# include /usr/bin/nano/asm.nanorc
+# include /usr/bin/nano/autoconf.nanorc
+# include /usr/bin/nano/awk.nanorc
+# include /usr/bin/nano/c.nanorc
+# include /usr/bin/nano/changelog.nanorc
+# include /usr/bin/nano/cmake.nanorc
+# include /usr/bin/nano/css.nanorc
+# include /usr/bin/nano/debian.nanorc
+# include /usr/bin/nano/default.nanorc
+# include /usr/bin/nano/elisp.nanorc
+# include /usr/bin/nano/fortran.nanorc
+# include /usr/bin/nano/gentoo.nanorc
+# include /usr/bin/nano/go.nanorc
+# include /usr/bin/nano/groff.nanorc
+# include /usr/bin/nano/guile.nanorc
+# include /usr/bin/nano/html.nanorc
+# include /usr/bin/nano/java.nanorc
+# include /usr/bin/nano/javascript.nanorc
+# include /usr/bin/nano/json.nanorc
+# include /usr/bin/nano/lua.nanorc
+# include /usr/bin/nano/makefile.nanorc
+# include /usr/bin/nano/man.nanorc
+# include /usr/bin/nano/mgp.nanorc
+# include /usr/bin/nano/mutt.nanorc
+# include /usr/bin/nano/nanohelp.nanorc
+# include /usr/bin/nano/nanorc.nanorc
+# include /usr/bin/nano/nftables.nanorc
+# include /usr/bin/nano/objc.nanorc
+# include /usr/bin/nano/ocaml.nanorc
+# include /usr/bin/nano/patch.nanorc
+# include /usr/bin/nano/perl.nanorc
+# include /usr/bin/nano/php.nanorc
+# include /usr/bin/nano/po.nanorc
+# include /usr/bin/nano/postgresql.nanorc
+# include /usr/bin/nano/pov.nanorc
+# include /usr/bin/nano/python.nanorc
+# include /usr/bin/nano/ruby.nanorc
+# include /usr/bin/nano/rust.nanorc
+# include /usr/bin/nano/sh.nanorc
+# include /usr/bin/nano/spec.nanorc
+# include /usr/bin/nano/tcl.nanorc
+# include /usr/bin/nano/tex.nanorc
+# include /usr/bin/nano/texinfo.nanorc
+# include /usr/bin/nano/xml.nanorc

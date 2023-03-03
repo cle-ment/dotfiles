@@ -23,6 +23,7 @@ brew 'yarn'
 brew 'docker-compose'
 brew 'saulpw/vd/visidata'
 brew 'ykman'
+brew 'nano'
 
 # Development
 brew 'imagemagick'
