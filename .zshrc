@@ -122,7 +122,7 @@ export LANG=en_US.UTF-8
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Add scripts to path 
-PATH=$PATH:/Users/clemens.westrup/clemens/code/scripts
+PATH=$PATH:$DOTFILES/scripts
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

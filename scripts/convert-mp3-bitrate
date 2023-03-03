@@ -1,0 +1,9 @@
+#!/bin/zsh
+
+echo "This script will convert all mp3 files in this folder to the desired bitrate. Which bitrate would you like to use?"
+
+BITRATE=$(gum choose "32" "64" "128" "256")
+
+for FILE in $(print -rl -- *.mp3(:r)); do ffmpeg -i $FILE.mp3 -codec:a libmp3lame -b:a 128k "./$FILE-$BITRATE.mp3"; done
+
+# gum spin -- $(for i in *; do echo "$i"; done)

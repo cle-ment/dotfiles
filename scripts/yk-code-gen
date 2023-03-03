@@ -1,0 +1,32 @@
+#!/bin/bash
+
+COLOR_OUTPUT=050
+COLOR_PROMPT=030
+
+gum style --foreground $COLOR_OUTPUT "YubiKey OATH code generator"
+
+# Check if several YubiKeys are present, if yes let the user choose the key
+if [[ $(ykman list | wc -l | xargs) == 0 ]]; then
+  gum style --foreground $COLOR_PROMPT 'No YubiKeys connected, please connect your key(s) and try again. Exiting.'
+  exit 1
+elif [[ $(ykman list | wc -l | xargs) == 1 ]]; then
+  YUBIKEY=$(ykman list | tr -d '\n')
+else
+  gum style --foreground $COLOR_PROMPT 'Several YubiKeys found. Select YubiKey'
+  YUBIKEY=$(ykman list | awk '{printf("\"%s\" ",$0)} END { printf "\n" }' | xargs gum choose)
+fi
+YUBIKEY_SERIAL=$(echo $YUBIKEY | rev | cut -d" " -f1 | rev)
+gum style --foreground $COLOR_OUTPUT "Using YubiKey: $YUBIKEY"
+
+# Check if several accounts are present on this YubiKey, if yes let the user choose the key
+ACCOUNTS=$(ykman --device $YUBIKEY_SERIAL oath accounts list)
+if [[ $(echo "$ACCOUNTS" | wc -l | xargs) == 1 ]]; then
+  ACCOUNT=$(echo "$ACCOUNTS" | tr -d '\n')
+else
+  gum style --foreground $COLOR_PROMPT 'Several accounts found, please select:'
+  ACCOUNT=$(ykman --device $YUBIKEY_SERIAL oath accounts list | awk '{printf("\"%s\" ",$0)} END { printf "\n" }' | xargs gum choose)
+fi
+gum style --foreground $COLOR_OUTPUT "Generating code for account: $ACCOUNT"
+
+ykman --device $YUBIKEY_SERIAL oath accounts code "$ACCOUNT" | rev | cut -d" " -f1 | rev | tr -d '\n'| pbcopy
+gum style --foreground $COLOR_OUTPUT "Copied one-time-password to clipboard."
