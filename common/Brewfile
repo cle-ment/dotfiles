@@ -7,7 +7,6 @@ tap 'nicoverbruggen/homebrew-cask'
 
 # Binaries
 brew 'bash' # Latest Bash version
-brew 'bat' # Used for spatie/visit
 brew 'coreutils' # Those that come with macOS are outdated
 brew 'ffmpeg'
 brew 'gh'
@@ -21,7 +20,6 @@ brew 'svn' # Needed to install fonts
 brew 'bfg' # https://rtyley.github.io/bfg-repo-cleaner/
 brew 'yarn'
 brew 'docker-compose'
-brew 'saulpw/vd/visidata'
 brew 'ykman'
 brew 'nano'
 brew 'gum'
@@ -44,8 +42,26 @@ cask 'rectangle'
 cask 'signal'
 cask 'spotify'
 cask 'TeamViewer'
+cask 'spitfire-audio'
 cask 'bartender'
 cask 'doxie'
+cask 'chatgpt'
+cask 'warp'
+cask 'google-drive'
+cask 'audacity'
+cask 'bartender'
+cask 'brave-browser'
+cask 'focusrite-control'
+cask 'gimp'
+cask 'inkscape'
+cask 'logi-options-plus'
+cask 'obs'
+cask 'obsidian'
+cask 'ollama'
+cask 'raspberry-pi-imager'
+cask 'r'
+cask 'rstudio'
+cask 'vlc'
 
 # Quicklook
 cask 'qlmarkdown'
@@ -60,5 +76,5 @@ cask 'font-roboto'
 mas 'Keynote', id: 409183694
 mas 'Numbers', id: 409203825
 mas 'Things', id: 904280696
-mas 'OneDrive', id: 823766827
-mas 'Yubico Authenticator', id: id1497506650
+mas 'Yubico Authenticator', id: 1497506650
+mas 'Adobe Lightroom', id: 1451544217
